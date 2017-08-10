@@ -1,0 +1,16 @@
+.show-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+}
+
+.right-side {
+  display:flex;
+  flex-direction:row;
+}
+
+.right-side .btn {
+  margin-top: 25px;
+  margin-bottom: 12.5px;
+  margin-left: 10px;
+}

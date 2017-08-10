@@ -1,0 +1,21 @@
+<div class="show-header">
+  <h2><%= @cocktail.name %></h2>
+  <div class="right-side">
+    <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail.id), {class: "btn btn-success" } %>
+    <%= link_to "Back", cocktails_path, {class: "btn btn-success" } %>
+  </div>
+</div>
+<table class="table table-striped">
+  <tr>
+    <td><strong>Ingredients</strong></td>
+    <td><strong>Description</strong></td>
+    <td></td>
+  </tr>
+  <% @cocktail.doses.each do |i| %>
+    <tr>
+      <td><%= Ingredient.find(i.ingredient_id).name %></td>
+      <td><%= i.description %></td>
+      <td><%= link_to "Delete Ingredient", cocktail_dose_path(@cocktail, i), method: :delete, confirm: "Are you sure?", class: "btn btn-success" %></td>
+    </tr>
+  <% end -%>
+</table>

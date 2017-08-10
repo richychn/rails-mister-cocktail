@@ -1,7 +1,20 @@
-<h1>Cocktails Menu</h1>
+<div class="show-header">
+  <h2>Cocktails Menu</h2>
+  <div class="right-side">
+    <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-success" %>
+  </div>
+</div>
 <table class="table table-striped">
-  <tr>Name</tr>
+  <tr>
+    <td><strong>Name</strong></td>
+    <td>Number of ingredients</td>
+    <td></td>
+  </tr>
   <% @cocktails.each do |cocktail| %>
-    <tr>cocktail.name</tr>
+    <tr>
+      <td><%= cocktail.name %></td>
+      <td><%= cocktail.doses.count %></td>
+      <td><%= link_to "See more", cocktail_path(cocktail), class: "btn btn-success" %></td>
+    </tr>
   <% end -%>
 </table>
