@@ -19,7 +19,7 @@
     <tr>
       <td><%= Ingredient.find(i.ingredient_id).name %></td>
       <td><%= i.description %></td>
-      <td><%= link_to "Delete Ingredient", cocktail_dose_path(@cocktail, i), method: :delete, confirm: "Are you sure?", class: "btn btn-success" %></td>
+      <td><%= link_to "Delete Ingredient", dose_path(i), method: :delete, confirm: "Are you sure?", class: "btn btn-success" %></td>
     </tr>
   <% end -%>
 </table>
