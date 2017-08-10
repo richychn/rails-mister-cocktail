@@ -11,7 +11,7 @@
 <div class="row">
   <% @cocktails.each do |c| %>
     <div class="col-xs-12 col-sm-3">
-      <%= render "cocktail", cocktail: c %>
+      <%= render "cocktail", cocktail: c, im: "http://unsplash.it/500/300" %>
     </div>
   <% end -%>
 </div>
