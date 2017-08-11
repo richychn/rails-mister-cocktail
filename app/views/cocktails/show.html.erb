@@ -4,7 +4,7 @@
 
 <%= render "show_banner", cocktail: @cocktail %>
 
-<table class="table" style="margin-top: 20px; border: none;">
+<table class="table-ingredients" style="margin-top: 20px; border: none;">
   <tr>
     <td><strong>Ingredients</strong></td>
     <td><strong>Description</strong></td>
@@ -14,7 +14,7 @@
     <tr>
       <td><%= Ingredient.find(i.ingredient_id).name %></td>
       <td><%= i.description %></td>
-      <td><%= link_to "Delete Ingredient", dose_path(i), method: :delete, confirm: "Are you sure?", class: "btn btn-success" %></td>
+      <td><%= link_to "Delete Ingredient", dose_path(i), method: :delete, confirm: "Are you sure?", class: "row-delete" %></td>
     </tr>
   <% end -%>
 </table>
