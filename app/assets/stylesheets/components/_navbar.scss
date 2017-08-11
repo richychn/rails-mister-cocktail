@@ -17,11 +17,11 @@
 }
 
 .navbar-cocktails a {
-  color: black;
+  color: $tan;
 }
 
 .navbar-cocktails a:hover {
   text-decoration: none;
-  color: $blue;
+  color: $black;
   cursor: pointer;
 }
