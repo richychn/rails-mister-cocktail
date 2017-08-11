@@ -4,15 +4,7 @@
 
 <%= render "show_banner", cocktail: @cocktail %>
 
-<div class="show-header">
-  <h2><%= @cocktail.name %></h2>
-  <div class="right-side">
-    <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail.id), {class: "btn btn-success" } %>
-    <%= link_to "Back", cocktails_path, {class: "btn btn-success" } %>
-  </div>
-</div>
-
-<table class="table table-striped">
+<table class="table" style="margin-top: 20px; border: none;">
   <tr>
     <td><strong>Ingredients</strong></td>
     <td><strong>Description</strong></td>

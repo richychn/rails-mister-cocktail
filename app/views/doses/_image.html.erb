@@ -1,0 +1,7 @@
+<% if @cocktail.photo %>
+  <% im = cl_image_path(@cocktail.photo.path) %>
+<% else %>
+  <% im = 'https://unsplash.it/500/300' %>
+<% end -%>
+
+<div class="new-dose-image" style="background-image: url('<%= im %>');"></div>

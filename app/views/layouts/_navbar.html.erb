@@ -1,9 +1,13 @@
-<div class="navbar">
-  <div class="right-side">
-
-  </div>
-  <div class="left-side">
-    <%= link_to "New Cocktail", new_cocktail_path %>
-    <%= link_to "Menu", cocktails_path %>
+<div class="navbar-cocktails">
+  <div class="container">
+    <div class="navbar-cocktails">
+      <div class="navbar-left-side">
+      </div>
+      <div class="navbar-right-side">
+        <%= link_to "New Cocktail", new_cocktail_path %>
+        <%= link_to "Menu", cocktails_path, { class: "btn btn-black", style: "margin-left: 10px;" } %>
+      </div>
+    </div>
   </div>
 </div>
+

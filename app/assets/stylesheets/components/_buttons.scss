@@ -1,0 +1,17 @@
+.btn-black {
+  background-color: black;
+  color: $purple !important;
+}
+
+.btn-black:hover {
+  background-color: $grey;
+  color: black !important;
+}
+
+.btn-success {
+  color: black;
+}
+
+.btn-success:hover {
+  color: black;
+}

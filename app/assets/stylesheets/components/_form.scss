@@ -1,0 +1,9 @@
+.form-control {
+  background-color: $black;
+  border: 1px solid $grey;
+  width: 500px;
+}
+
+textarea.form-control {
+  height: 200px;
+}

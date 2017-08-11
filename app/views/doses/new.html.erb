@@ -1,5 +1,9 @@
 <% content_for(:title) do %>
-  "New Ingredient"
+  New Ingredient
 <% end -%>
 <h2>Add Ingredient</h2>
-<%= render 'form' %>
+<div class="vertical-divide">
+  <%= render 'form' %>
+  <%= render 'image' %>
+</div>
+
