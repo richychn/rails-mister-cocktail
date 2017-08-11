@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Ingredient.destroy_all
 
-ingredients = ["lemon", "ice", "mint", "vodka", "gin", "tequila", "water", "orange juice", "sugar"]
+ingredients = ["lemon", "ice", "mint", "vodka", "gin", "rum", "tequila", "water", "orange juice", "sugar", "Chambord raspberry liquor", "pineapple juice"]
 
 ingredients.each do |i|
-  Ingredient.create(name: i)
+  Ingredient.create(name: i.capitalize)
 end
