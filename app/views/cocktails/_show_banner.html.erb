@@ -8,6 +8,5 @@
   <div class="banner-content">
     <h1><%= cocktail.name %></h1>
     <%= link_to "Add Ingredient", new_cocktail_dose_path(cocktail.id), {class: "btn btn-success", style: "margin-top: 10px;" } %>
-    <%= link_to "Delete Cocktail", cocktail_path(cocktail), method: :delete, confirm: "Are you sure?", class: "btn btn-success", style: "margin-top: 10px;" %>
   </div>
 </div>
