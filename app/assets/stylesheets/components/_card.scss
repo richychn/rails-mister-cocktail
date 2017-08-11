@@ -5,6 +5,7 @@
   background-position: center;
   color: white;
   position: relative;
+  transition: all 0.3s ease;
 }
 .card-user {
   position: absolute;
@@ -45,4 +46,7 @@
 }
 .card-link:hover {
   opacity: 0.1;
+}
+.card:hover {
+  transform: scale(1.2, 1.2);
 }
