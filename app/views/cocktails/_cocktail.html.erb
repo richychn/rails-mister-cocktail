@@ -1,4 +1,10 @@
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= im %>);">
+<% if cocktail.photo %>
+  <% im = cl_image_path(cocktail.photo.path) %>
+<% else %>
+  <% im = 'https://unsplash.it/500/300' %>
+<% end -%>
+
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= im %>')">
   <div class="card-header">
     <div class="card-description">
       <h2><%= cocktail.name %></h2>
